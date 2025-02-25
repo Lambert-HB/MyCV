@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title id="Title" >Portfolio project</title>
+
+        <style> 
+
+            /* Set font-family and color for entire form  */
+            html * { font-family: Arial, Helvetica, sans-serif !important;
+                     color: black !important;}
+
+            /* Adjust search-box margins */
+            .Search-box { margin-bottom: 20px; } 
+
+            /* Set background colour and text alignment for body of form */
+            body { background-color: rgb(175, 200, 242);
+                   text-align: center; }
+
+            /* Style Heading 1 */
+            h1 { color: black;
+                 margin : auto;
+                 width :350px;
+                 background-color: darkgray;
+                 text-align: center;
+                 border: 5px solid black;
+                 margin-bottom: 35px;}
+
+            /* Style Heading 2 */
+            h2 {color: black; 
+                text-align: center;
+                 background-color: darkgray;
+                 margin: auto;
+                 border: 5px solid rgb(66, 66, 66);
+                 margin-bottom: 35px;}
+
+            /* Style paragraphs */
+            p { color: black;
+                background-color: darkgray;
+                text-align : center;
+                max-width: 50%;
+                margin: auto;
+                border: 5px solid gray;
+                margin-bottom: 35px;}
+
+            /* Adjust image  */
+            img { margin: 20px;
+                  background-color: rgb(216, 215, 215);
+                  border: 5px solid gray;
+                  outline: 3px solid black;}
+
+            /* Style headings */
+            .narrow-heading { max-width: 25%; 
+                              margin: auto;
+                              margin-bottom: 20px;}
+
+            /* Make space around normal sized input boxes */
+            .spacious-input { margin-bottom: 50px;
+                              margin-top: 6px; }
+
+            /* Enlarge input box size */
+            .wide-tall-input { width: 300px;
+                               height: 130px;
+                               margin-bottom: 50px;}
+        </style>
+    </head>
+
+
+    <body>
+
+        <!-- Search box -->
+        <div class="Search-box"> 
+             <!-- Create get form to search contents of page -->
+            <form action="" method="get">
+                <input type="text" name="query" id="Search-input" placeholder="Type here..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Page heading -->
+        <div id="Name">
+            <h1 >Lambert Hendrik Badenhorst</h1>
+            <!-- Add image of self  -->
+            <img src="IMG_9207.jpg" alt="Old CV Photo" width="200" >
+        </div>
+
+        <!--  Biography -->
+        <div id="Bio">
+            <h2 class="narrow-heading">Bio:</h2>
+                <p>
+                    <br>I am a goal-oriented person, who works tirelessly towards growth and success.
+                    My goal is to lay down the foundations of a career in software by showing consistency,
+                    reliability and adhering to a personal standard. I believe that the quality of work a person 
+                    delivers is a reflection of their character.
+                    
+                    <br>My previous work experience is in the private maritime industry as a deckhand in France and South Africa
+                    and part of a restoration crew for a sailing vessel., Although this may not be in line with my current goals
+                    i would like to think that it taught me important lessons working towards a deadline in a team that 
+                    needs to operate as a single well oiled machine in order to use time efficiently and divide labour sensibly.
+                </p>
+        </div>
+
+        <!-- Contact details -->
+        <div id="Contact">
+            <h2 class="narrow-heading" >Contact details: </h2>
+                <p>
+                Lambert Hendrik Badenhorst
+                <br>Number: 0618077026 (+27)
+                <br>e-mail: lambertbadenhorst@gmail.com
+                </p>
+        </div>
+
+        <!--  Skills -->
+        <div id="Skills">    
+            <h2 class="narrow-heading" >Skills:</h2>
+
+            <p>
+                Python
+                <br>HTML / CSS
+                <br>SQL
+                <br>Teamwork
+                <br>Work flow optimisation 
+                <br>Organisation and planning
+            </p>
+        </div>
+
+        <!-- Education -->
+        <div id="Education">
+            <h2 class="narrow-heading" >Education:</h2>
+                <p>
+                    National Senior Certificate- Hoërskool Noordheuwel 2018<br>
+                    South African Day Skipper License<br>
+                    RYA Power-boat level 2 <br>
+                    Maritime Fire-fighting license level 1<br> 
+                    Standards of Training, Certification, and Watch-keeping (STCW):<br>
+                        Designated Security Duties level 1<br>
+                        Personal Survival and Social Responsibility level 1<br>
+                        Personal Safety Techniques level 1<br>
+                        Elementary First Aid level 1 <br>
+                </p>
+            </div>
+
+            <!-- Work experience -->
+        <div id="Experience">
+            <h2 class="narrow-heading" >Work experience:</h2>
+
+            <p>
+                Vaporworx Shopkeeper 2024
+                Johannesburg South Africa
+                <br>
+                <br>Motor Yacht Quantum H
+                Pre season prep crew 2023
+                Toulon France
+                <br>
+                <br>Sailing yacht The Impossible machine
+                Restoration crew 2022
+                Cape Town V/A Waterfront Marina
+                <br>
+                <br>Waiter/Barista/Bartender The 2 eves coffee shop
+                Cape Town Long Street
+            </p>
+        </div>
+
+        <!-- Feedback form -->
+        <div id="Contact-form">
+            <!-- Create and define contact form for feedback -->
+            <h2 class="narrow-heading" style="margin-bottom: 0px;">Feedback/Contact:</h2>
+            <form action="/feedback-submission" method="post" style="background-color: darkgrey;">
+                <!-- Define Name input box  -->
+                <label>Name</label>
+                <input type="text" class="spacious-input" id="name" required>
+                <!-- Create and define E-mail input box -->
+                <label>E-mail</label>
+                <input type="text" class="spacious-input" id="E-mail" required>
+                <br>
+                <!-- Create and define Comments input field  -->
+                <label>Comments</label>
+                <input width="150px" type="text" class="wide-tall-input" id="Comments" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </body>
+
+</html>
